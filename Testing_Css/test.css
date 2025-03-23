@@ -1,0 +1,11 @@
+.mainheading{
+ color: pink;
+ font-size: 36px; }
+p{
+ color: blue;
+ font-size: 18px;   
+}
+.bullet{
+ color: orange; 
+ list-style-type: square; 
+}
