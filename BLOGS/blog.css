@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
@@ -25,7 +25,7 @@ header {
     gap: 20px;
 }
 
-.main-menu li a {
+.main-menu a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -64,8 +64,8 @@ header {
 .blog-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 20px 0;
+    gap: 30px;
+    padding: 10px 0px;
 }
 
 .blog-item {
@@ -79,8 +79,11 @@ header {
 }
 
 .blog-content {
-    display: flex;
+    display:relative ;
     background-color: #d4b63c; /* Matches the body background */
+    margin: 0 auto 40px;
+    text-align: justify;
+    padding: 10px 80px;
 }
 
 
@@ -136,13 +139,19 @@ footer {
 }
 
 .logo {
-    font-style: italic;
-    font-size: 16px;
+    display: flex;
+    gap: 30px;
+    width: 6rem;
+    height:10rem;
+  
 }
 
-.about {
+
+#About {
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 /* Responsive Adjustments */
@@ -151,9 +160,6 @@ footer {
         flex-direction: column;
     }
     
-    .image-container, .blog-text {
-        flex: 0 0 100%;
-    }
     
     .blog-text {
         padding: 20px 0 0 0;

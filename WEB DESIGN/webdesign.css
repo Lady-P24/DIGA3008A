@@ -4,16 +4,25 @@ body {
     font-family: Arial, sans-serif;
     background-color: #b5671d;
     color: #333;
+    line-height: 1.6;
 }
 
 
 
 /* Navigation */
+.container{
+    width: 70%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items: center;
     padding: 20px 50px;
+ 
 }
 
 .nav-links {
@@ -31,6 +40,7 @@ nav {
     display: none;
     cursor: pointer;
     font-size: 24px;
+
 }
 
 @media (max-width: 768px) {
@@ -40,6 +50,7 @@ nav {
 }
 
 /* Main Content */
+
 .main-content {
     padding: 10px 50px;
     background-color: rgb(255, 253, 240);
