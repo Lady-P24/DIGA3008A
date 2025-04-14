@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e883c1;
+    color: #333;
+}
+
+.container {
+    width: 70%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+#homepage{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.main-content{
+    background-color: rgb(249, 197, 206);
+}
+/*footer*/
+#logo{
+    display: flex;
+    width: 6rem;
+    height: 10rem
+}
