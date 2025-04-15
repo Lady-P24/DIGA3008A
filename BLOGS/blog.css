@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #d4b63c; /* Gold/yellow background color */
     color: #333;
-    line-height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
@@ -23,13 +23,19 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
+    float:right;
+    font-size: 0.7rem;
 }
 
 .main-menu a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 0.8rem;
+    padding:10px 10px;
+}
+.main-menu a:hover {
+background: rgb(163, 184, 42);
 }
 
 .menu-toggle {
@@ -50,10 +56,7 @@ header {
     margin: 6px 0;
 }
 
-@media (max-width: 768px) {
-    .main-menu {
-        display: none;
-    }
+@media (max-width: 768px){
     
     .menu-toggle {
         display: block;
@@ -64,8 +67,8 @@ header {
 .blog-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 10px 0px;
+    gap: 40px;
+    padding: 10px 10px;
 }
 
 .blog-item {
@@ -129,7 +132,7 @@ header {
 /* Footer Styles */
 footer {
     padding: 20px 0;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .footer-content {
@@ -143,7 +146,6 @@ footer {
     gap: 30px;
     width: 6rem;
     height:10rem;
-  
 }
 
 
@@ -154,12 +156,18 @@ footer {
     color: black;
 }
 
+#About:hover {
+    cursor: pointer;
+    padding:10px 10px;
+    background:rgb(163, 184, 42) ;
+}
+   
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .blog-content {
         flex-direction: column;
     }
-    
     
     .blog-text {
         padding: 20px 0 0 0;
