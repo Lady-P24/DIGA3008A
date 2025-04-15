@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #d4b63c; /* Gold/yellow background color */
     color: #333;
-    line-height: 1.6;
+    line-height: 100vh;
 }
 
 .container {
