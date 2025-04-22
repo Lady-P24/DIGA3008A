@@ -79,12 +79,13 @@ background: rgb(163, 184, 42);
     border: 1px solid #666;
     padding: 10px;
     position: relative;
+    margin-top: 30px;
 }
 
 .blog-content {
     display:relative ;
     background-color: #d4b63c; /* Matches the body background */
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
     text-align: justify;
     padding: 10px 80px;
 }
