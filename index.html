@@ -16,28 +16,28 @@
 
    <div class="navigation">
      <div class="nav-items">
-       <div class="nav-item">
+       <div class="nav-item" data-target="blogs-content">
          <div class="nav-content">
            <div class="nav-number">01/</div>
            <div><a class ="nav-title"href="BLOGS/blog.html">BLOGS</a></div>
          </div>
        </div>
-       <div class="nav-item">
-        <div class="nav-content">
+       <div class="nav-item" data-target="portfolio-content">
+        <div class="nav-content" >
           <div class="nav-number">02/</div>
           <div><a class="nav-title" href ="PORTFOLIO/portfolio.html">PORT</a></div>
           <div><a class="nav-title" href ="PORTFOLIO/portfolio.html">FOLIO</a></div>
         </div>
        </div>
-       <div class="nav-item">
-        <div class="nav-content">
+       <div class="nav-item" data-target="web-design-content">
+        <div class="nav-content"  >
           <div class="nav-number">03/</div>
           <div><a class="nav-title" href ="WEB DESIGN/webdesign.html">WEB</a></div>
           <div><a class="nav-title" href ="WEB DESIGN/webdesign.html">DESIGN</a></div>
         </div>
       </div>
-      <div class="nav-item">
-        <div class="nav-content">
+      <div class="nav-item" data-target="essay-content">
+        <div class="nav-content" >
           <div class="nav-number">04/</div>
           <div><a class="nav-title" href ="ESSAYS/essays.html">ESSAY</a></div>
         </div>
@@ -45,8 +45,31 @@
      </div>
    </div>
 
-   <footer class="footer">
-    <div><a id= "About"class="nav-title" href="ABOUT/about.html">ABOUT</a></div>
-   </footer>
+       <!--Content description for each block-->
+        <div id="blogs-content" class="content-section">
+          <h2>Blogs</h2>
+          <p>Welcome to my blog section. Here, I share my thoughts on my web-design journey and creative processes.</p>
+          <p>Check back regularly for new posts!</p>
+       </div>
+
+       <div id="portfolio-content" class="content-section">
+          <h2>Portfolio</h2>
+          <p>Explore my creative works and projects. This section showcases my projects, professional or just fun projects.</p>
+       </div>
+
+       <div id="web-design-content" class="content-section">
+         <h2>Web Design</h2>
+          <p>View my web design projects. I focus on creating responsive, visually appealing, and user-friendly websites.</p>
+       </div>
+
+       <div id="essay-content" class="content-section">
+         <h2>Essay</h2>
+         <p>Read my essays on various topics related to design theory, and contemporary creative practices.</p>
+       </div>
+      
+     <footer class="footer">
+      <div><a id= "About"class="nav-title" href="ABOUT/about.html">ABOUT</a></div>
+     </footer>
+     <script src="index.js"></script>
   </body>
 </html>

@@ -48,8 +48,13 @@ body {
 
 .nav-item:hover {
     background-color: rgba(239, 215, 215, 0.204);
+   transform: scale(1.05);
   }
 
+  .nav-item:active {
+    background-color: rgba(239, 215, 215, 0.204);
+    transform: scale(1.05);
+  }
   .nav-content {
     text-align: left;
     padding: 10px;
@@ -70,6 +75,22 @@ body {
     
   }
 
+  .content-section{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgba(239, 215, 215, 0.204);
+    border-radius: 8px;
+  }
+
+  .content-section:active{
+    display: block;
+  }
+
+  /* Content for each section */
+#blogs-content, #portfolio-content, #web-design-content, #essay-content {
+  color: white;}
+
+
   /* Footer styles */
   .footer {
     display: flex;
@@ -85,7 +106,7 @@ color: white;
   }
 
   /* Responsive design */
-  @media (max-width: 700px){
+  @media (max-width: 768px){
     .nav-items {
       flex-direction: column;
       align-items: center;
@@ -94,5 +115,10 @@ color: white;
     .nav-item {
       width: 90%;
       max-width: 300px;
+    }
+
+    #logo{
+      width: 6rem;
+    height: 10rem
     }
   }
