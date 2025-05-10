@@ -90,6 +90,10 @@ body {
 #blogs-content, #portfolio-content, #web-design-content, #essay-content {
   color: white;}
 
+  /* hide all content sections by default */
+.content-section {
+  display: none;
+}
 
   /* Footer styles */
   .footer {
@@ -122,3 +126,4 @@ color: white;
     height: 10rem
     }
   }
+
