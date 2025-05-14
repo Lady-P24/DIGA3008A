@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #d4b63c; /* Gold/yellow background color */
+    background-color:  #f5e6ca;
     color: #333;
     min-height: 100vh;
 }
@@ -30,20 +30,24 @@ header {
 
 .main-menu a {
     text-decoration: none;
-    color:#333;
+    color:white;
+    background: #2A6B74;
     font-weight: bold;
     font-size: 1.0rem;
     padding:10px 10px;
 }
 .main-menu a:hover {
-background: #333;
-color: white;
+background: #a1a1a1;
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 
 /* Blog List Styles */
 h1{
     top:20px;
+    color:#2A6B74;
+
 }
 .blog-list {
     display: flex;
@@ -66,7 +70,7 @@ h1{
 
 .blog-content {
     display:relative ;
-    background-color: #d4b63c; /* Matches the body background */
+    background-color: #FFF9F0; 
     margin: 0 auto 50px;
     text-align: justify;
     padding: 10px 80px;
@@ -85,11 +89,11 @@ h1{
     left: 0;
     width: 100%;
     height: 50px;
-    background: linear-gradient(transparent, rgba(213, 184, 74, 0.9));
+    background: linear-gradient(transparent, rgba(244, 211, 183, 0.9));
 }
 
 .see-more-btn {
-    background-color: #333;
+    background-color: #2A6B74;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -131,11 +135,12 @@ h1{
 .headline {
     font-size: 28px;
     margin-bottom: 5px;
+    color: #2A6B74;
 }
 
 .date {
     font-size: 14px;
-    color: #555;
+    color: #C45C3C;
     margin-bottom: 10px;
 }
 
@@ -167,14 +172,14 @@ footer {
     font-size: 1.0rem;
     font-weight: bold;
     text-decoration: none;
-    color:#333;
+    color:white;
+    padding:10px 10px;
+    background: #2A6B74;
 }
 
 #About:hover {
     cursor: pointer;
-    padding:10px 10px;
-    background:#333;
-    color: white;
+    background:#a1a1a1;
 }
    
 

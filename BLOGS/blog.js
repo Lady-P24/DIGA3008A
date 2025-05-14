@@ -1,9 +1,3 @@
-
- // Blog Page "See More" functionality
- //  expansion and collapse of blog posts
- 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     // Get all the "See More" buttons
     const seeMoreButtons = document.querySelectorAll('.see-more-btn');
