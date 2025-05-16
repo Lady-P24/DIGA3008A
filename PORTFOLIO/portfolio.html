@@ -4,10 +4,76 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <a href="../index.html">Homepage</a>
-    <h1>PORTFOLIO</h1>
-    <video src="VIDEOS/jazz_Pitso_720HD.mp4"controls></video>
+    <header>
+        <nav class="menu-links" >   
+           <a href="../index.html">Homepage</a>
+           <a href="../BLOGS/blog.html">Blogs</a>
+           <a href="../ESSAYS/essays.html">Essay</a>
+           <a href="../WEB DESIGN/webdesign.html">Web Design</a>
+        </nav>
+        <h1>PORTFOLIO</h1>
+    </header>
+    <main>
+        <section class="gallery-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="image">Images</button>
+            <button class="filter-btn" data-filter="video">Videos</button>
+        </section>
+
+    
+        <section class="gallery">
+          <!-- Videos -->
+           <div class="gallery-item video-item" data-type="video">
+                <div class="item-container">
+                    <video controls>
+                      <source src="../PORTFOLIO/VIDEOS/Musa_Short_Film_Concept.mp4" type="video/mp4">
+                    </video>
+                    <div class="item-caption">Musa_Short_Film Concept</div>
+                </div>
+            </div>
+
+             <div class="gallery-item video-item" data-type="video">
+                <div class="item-container">
+                    <video controls>
+                      <source src="../PORTFOLIO/VIDEOS/Cilect Musa_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="item-caption">Musa_Short_Film</div>
+                </div>
+           </div>
+        
+            <div class="gallery-item video-item" data-type="video">
+                <div class="item-container">
+                    <video controls>
+                      <source src="../PORTFOLIO/VIDEOS/jazz_Pitso_720HD.mp4" type="video/mp4">
+                    </video>
+                    <div class="item-caption">Theatre_Performance_Reel</div>
+                </div>
+            </div>
+        
+            <!-- Images -->
+            <div class="gallery-item image-item" data-type="image">
+                <div class="item-container">
+                    <img src="../PORTFOLIO/IMG/colour-mash.png" alt="Artwork 1">
+                    <div class="item-caption">Abstract_Graphic</div>
+                </div>
+            </div>
+      </section>
+        <div class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <div class="lightbox-content">
+                <div class="lightbox-media"></div>
+                <div class="lightbox-caption"></div>
+           </div>
+            <button class="lightbox-nav prev">&lt;</button>
+            <button class="lightbox-nav next">&gt;</button>
+        </div>
+    </main>
+    <footer>
+        <a href="../ABOUT/about.html">About</a>
+    </footer>
+    <script src="portfolio.js"></script>
 </body>
 </html>
