@@ -17,6 +17,7 @@ body {
 header {
     padding: 20px 0;
     position: relative;
+
 }
 
 .main-menu {
@@ -26,6 +27,7 @@ header {
     float:right;
     font-size: 0.7rem;
     top: 30px;
+    margin-right:0 ;
 }
 
 .main-menu a {
@@ -45,8 +47,11 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
 /* Blog List Styles */
 h1{
+    text-align: left;
     top:20px;
     color:#2A6B74;
+    text-shadow: 1px 1px 3px rgba(100, 92, 92, 0.8);
+    letter-spacing: 2px;
 
 }
 .blog-list {
