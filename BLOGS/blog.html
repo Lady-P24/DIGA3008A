@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY BLOGS</title>
-    <link rel="stylesheet" href="blog.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="blogs written for the course">
+  <title>MY BLOGS</title>
+  <link rel="stylesheet" href="blog.css">
 </head>
+
 <body>
   <div class="container">
     <header>
-        <article class="main-menu">
-          <a href="../index.html">Home</a>
-          <a href="../PORTFOLIO/portfolio.html">Portfolio</a>
-          <a href="../ESSAYS/essays.html">Essays</a>
-          <a href="../WEB DESIGN/webdesign.html">Web Design</a>
-
-       </article>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a class="navigation" href="../index.html">HOME</a></li>
+          <li><a class="current navigation" href="../BLOGS/blog.html">BLOGS</a></li>
+          <li><a class="navigation" href="../ESSAYS/essays.html">ESSAYS</a></li>
+          <li><a class="navigation" href="../PORTFOLIO/portfolio.html">PORTFOLIO</a></li>
+          <li><a class="navigation" href="../WEB DESIGN/webdesign.html">WEBDESIGN</a></li>
+        </ul>
       </nav>
+      <h1>BLOGS</h1>
     </header>
 
     <main>
-      <h1>BLOGS</h1>
+     
       <div class="blog-list">
                 <!-- Blog Item 1 -->
                 <div class="blog-item">
@@ -159,7 +163,7 @@
                        My about text will be around “18 to 20 px”. The menu bar diemensions will be around “68x44” (subject to change).
                         Paragraph text will be around 18px. Headings on each page will be 36px to 48px. “Copyright text” will be around 14px to 16px. Situated at the bottom left corner of every page. 
                         </article>
-                        <p>Below is a link to my wire-frame and structure of how my website may look like </p> <a href="Wire_Frame_pamela.pdf">Wire_Frame_pamela</a>
+                        <p>Below is a link to my wire-frame and structure of how my website may look like </p> <a href="../WEB DESIGN/Wire_Frame_pamela.pdf">Wire_Frame_pamela</a>
                         </p>
                       </div>
                 </div>
@@ -177,10 +181,24 @@
                       <p class="excerpt"><article>My goal is for my website to have an appealing colour combination and to use each colour to define each page of content. 
                         I am going for a very minimalistic look so that my website is not visually overwhelming. 
                         The only place that should feel like a gallery is the photography and film section. The rest of the sections will be text heavily and have little to not images present.  </article>
-                       <img class="font-image" src="./IMG/livemono_family.jpeg"alt="image of a livemono family font"><figcaption>Livemono Family Font</figcaption>
-                       <img class="font-image"src="./IMG/Stegris_family.jpeg"alt="image of a Stegris family font"><figcaption>Stegris Family Font</figcaption>
-                      <img class="font-image"src="./IMG/main-colours.jpeg"alt="Image of colours that will be used on the website">
-                      <img class="font-image"src="./IMG/Possibel_homepage.jpeg"alt="image of homepage witha gradient background containing the colour purple, pink , lime and orangish colour"><figcaption>Homepage image</figcaption>
+                        <div class="image-grid">
+                          <figure class="grid-item">
+                            <img class="font-image" src="./IMG/livemono_family.jpeg"alt="image of a livemono family font"><figcaption>Livemono Family Font</figcaption>
+                          </figure>
+              
+                          <figure class="grid-item">
+                            <img class="font-image"src="./IMG/Stegris_family.jpeg"alt="image of a Stegris family font"><figcaption>Stegris Family Font</figcaption>
+                          </figure>
+              
+                          <figure class="grid-item">
+                            <img class="font-image"src="./IMG/main-colours.jpeg"alt="Image of colours that will be used on the website">
+                          </figure>
+              
+                          <figure class="grid-item">
+                            <img class="font-image"src="./IMG/Possibel_homepage.jpeg"alt="image of homepage witha gradient background containing the colour purple, pink , lime and orangish colour">
+                            <figcaption>Homepage image</figcaption>
+                          </figure>
+                        </div>
                       </p>
                     </div>
               </div>
@@ -209,8 +227,15 @@
                       The home button is not obvious.
                       As much as I adore the backdrop images, they are constantly shifting, which can be distracting when reading a text.
                      </article>
-                     <img class="henrri_1"src="./IMG/henrri first_page.jpeg"alt="image from henrri website "><figcaption>First image seen when on the henrri website</figcaption>
-                     <img class="henrri_2"src="./IMG/homepage_herri.jpeg"alt="image from henrri website"><figcaption>henrri homepage with content</figcaption>
+                     <div class="image-grid">
+                        <figure class="grid-item">
+                         <img class="henrri_1"src="./IMG/henrri first_page.jpeg"alt="image from henrri website "><figcaption>First image seen when on the henrri website</figcaption>
+                        </figure>
+
+                        <figure class="grid-item">
+                          <img class="henrri_2"src="./IMG/homepage_herri.jpeg"alt="image from henrri website"><figcaption>henrri homepage with content</figcaption>
+                        </figure>
+                     </div>
                     </p>
                  </div>
             </div>
@@ -290,12 +315,18 @@
       
     <footer>
       <div class="footer-content">
-        <img class="logo" src="../WEB DESIGN/IMAGES_WEBDESIGN/logo2-transparent_black.png" alt="Website logo"/>
-         
+         <a href="../index.html">
+           <img class="logo" src="../WEB DESIGN/IMAGES_WEBDESIGN/logo2-transparent_black.png" alt="Website logo"/>
+         </a>
         <a id= "About"class="nav-title" href="../ABOUT/about.html">ABOUT</a>
       </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 - All rights reserved</p>
+      </div>
     </footer> 
-    <script src="blog.js"></script>
+   
   </div>
+  <script src="blog.js"></script>
 </body>
 </html>
