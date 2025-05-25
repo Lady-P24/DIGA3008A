@@ -289,10 +289,6 @@ figcaption {
 }
 
 /* Footer */
-footer {
-    padding: 30px 0;
-    margin-top: 40px;
-}
 
 .footer-content {
     display: flex;
@@ -301,14 +297,22 @@ footer {
 }
 
 .logo {
+    display: flex;
+    gap: 30px;
     width: 6rem;
-    height: auto;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
+    height:10rem;
+    margin-left: 100px;
 }
 
-.logo:hover {
-    opacity: 1;
+#About {
+    padding:10px 10px;
+    margin-right: 40px;
+}
+
+#About:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .copyright {

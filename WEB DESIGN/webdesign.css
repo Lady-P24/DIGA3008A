@@ -1,62 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #b5671d;
     color: #333;
     height: 100vh;
+    line-height: 1.6;
 }
 
 
-
-/* Navigation */
 .container{
-    width: 70%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding: 15px;
+}
+
+header {
+    margin-bottom: 30px;
 }
 
 nav {
     display: flex;
-    align-items: center;
-    padding: 0 20px;
-    float: right;
-    margin-right:10px ;
-    margin-top:5px;
-    
+    justify-content: flex-end;
+    padding: 15px 0;
 }
 
-nav ul li{
-display: inline-block;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
-nav ul li a{
+
+nav ul li a.navigation,#About  {
     font-size: 1rem;
+    font-weight: 600;
     color: #000;
     text-decoration: none;
+    background:rgb(255, 253, 240) ;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.navigation {
-background:rgb(255, 253, 240);
-padding:10px 10px;
-}
-.navigation:hover {
-    background-color: rgba(80, 80, 80, 0.694);
-
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-
+nav ul li a.navigation:hover,
+nav ul li a.navigation:focus,#About:hover,#About:focus {
+    background-color: rgba(254, 196, 114, 0.73);
+    color:black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
+nav ul li a.current {
+    background-color: #a78766;
+    color: white;
 }
-
-/* Main Content */
 
 .main-content {
     padding: 10px 50px;
@@ -66,8 +63,23 @@ padding:10px 10px;
 
 h1 {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin: 30px 0 40px;
+    color: #333;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #333;
 }
 
 .description {
@@ -83,42 +95,204 @@ h1 {
     grid-template-columns:repeat(2,300px) ;
     justify-items:center;
 }
-.IMGS{
-    justify-content: space-evenly;
-    margin-bottom: 20px; 
-    height: 15rem; 
-    width: 18rem;
-    
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 25px 0;
+    padding: 0 40px;
 }
-#home-image {
-height: 20rem;
-width: 30rem;
-margin-left: 20px;
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border: 3px solid white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 1100;
+    transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    transform: scale(1.1);
 }
 
 /* Footer */
 
-.logo{
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 30px;
+    width: 6rem;
     height:10rem;
+    margin-left: 100px;
 }
 
-.about{
-margin-left: 50px;
-display: flex;
-align-items: center;
-padding: 0 0;
-float: right;
-margin-top:80px;
-color:#000;
-font-weight: bold;
-font-size: 1rem;
-padding:10px 10px ;
-text-decoration: none;
+#About {
+    padding:10px 10px;
+    margin-right: 40px;
 }
 
-.about:hover{
+.copyright {
     cursor: pointer;
-    color:rgb(255, 253, 240);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .blog-content {
+        flex-direction: column;
+    }
+    
+    .blog-text {
+        padding: 20px 0 0 0;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .main-content {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    nav ul li a.navigation {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
 
 

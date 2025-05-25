@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
+    <title>My Portfolio | Visual & Video Projects</title>
+    <meta name="description" content="Explore my portfolio featuring original short films, theatre performances, and abstract digital artworks.">
+    <meta name="author" content="Pamela Phakathi">
     <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
     <header>
-        <nav class="menu-links" >   
-           <a href="../index.html">Home</a>
-           <a href="../BLOGS/blog.html">Blogs</a>
-           <a href="../ESSAYS/essays.html">Essay</a>
-           <a href="../WEB DESIGN/webdesign.html">WebDesign</a>
+        <nav aria-label="Main navigation">
+            <ul>
+              <li><a class="navigation" href="../index.html">HOME</a></li>
+              <li><a class="navigation" href="../BLOGS/blog.html">BLOGS</a></li>
+              <li><a class="navigation" href="../ESSAYS/essays.html">ESSAYS</a></li>
+              <li><a class="current navigation" href="../PORTFOLIO/portfolio.html">PORTFOLIO</a></li>
+              <li><a class="navigation" href="../WEB DESIGN/webdesign.html">WEBDESIGN</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <h1>PORTFOLIO</h1>
 
+        <h1>PORTFOLIO</h1>
+    </header>
+   
+    <main>
         <section class="gallery-controls">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="image">Images</button>
             <button class="filter-btn" data-filter="video">Videos</button>
         </section>
 
-    
         <section class="gallery">
           <!-- Videos -->
            <div class="gallery-item video-item" data-type="video">
@@ -62,24 +68,30 @@
                 </div>
             </div>
       </section>
-        <div class="lightbox">
-            <span class="close-lightbox">&times;</span>
-            <div class="lightbox-content">
-                <div class="lightbox-media"></div>
-                <div class="lightbox-caption"></div>
-           </div>
-            <button class="lightbox-nav prev">&lt;</button>
-            <button class="lightbox-nav next">&gt;</button>
+
+      <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-media"></div>
+            <div class="lightbox-caption"></div>
         </div>
+        <button class="lightbox-nav prev">&lt;</button>
+        <button class="lightbox-nav next">&gt;</button>
+    </div>
     </main>
 
-        <footer>
-            <div class="footer-content">
+    <footer>
+        <div class="footer-content">
+            <a href="../index.html">
               <img class="logo" src="../WEB DESIGN/IMAGES_WEBDESIGN/logo2-transparent_black.png" alt="Website logo"/>
-               
-              <a id= "About"class="nav-title" href="../ABOUT/about.html">ABOUT</a>
-            </div>
-          </footer>
+            </a>
+           <a id="About" class="nav-title" href="../ABOUT/about.html">ABOUT</a>
+         </div>
+   
+         <div class="copyright">
+           <p>&copy; 2025 - All rights reserved</p>
+         </div> 
+      </footer>
 
     <script src="portfolio.js"></script>
 </body>

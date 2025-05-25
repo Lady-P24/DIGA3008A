@@ -81,4 +81,3 @@ document.addEventListener('DOMContentLoaded', function() {
     lightbox.setAttribute('aria-label', 'Image viewer');
     closeButton.setAttribute('aria-label', 'Close image viewer');
 });
-//conistent for all images across this website

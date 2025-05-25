@@ -3,15 +3,13 @@ body {
     background-color: #e883c1;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 :focus {

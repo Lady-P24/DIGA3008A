@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web design Journey</title>
+    <meta name="description" content=" Explore my Webdesign journey">
+    <meta name="author" content="Pamela Phakathi">
+    <title>Web design Journey | wire-frames & design </title>
     <link rel="stylesheet" href="webdesign.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-          <ul>
-            <li><a class="navigation"href="../index.html">HOME</a></li>
-            <li><a class="navigation"href="../BLOGS/blog.html">BLOGS</a></li>
-            <li><a class="navigation"href="../ESSAYS/essays.html">ESSAYS</a></li>
-            <li><a class="navigation"href="../PORTFOLIO/portfolio.html">PORTFOLIO</a></li>
-          </ul> 
-    </nav>
-    <div class="hamburger">≡</div>
-</header>
+  <div class="container">
+    
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a class="navigation" href="../index.html">HOME</a></li>
+                <li><a class="navigation" href="../BLOGS/blog.html">BLOGS</a></li>
+                <li><a class="navigation" href="../ESSAYS/essays.html">ESSAYS</a></li>
+                <li><a class="navigation" href="../PORTFOLIO/portfolio.html">PORTFOLIO</a></li>
+                <li><a class="current navigation" href="../WEB DESIGN/webdesign.html">WEBDESIGN</a></li>
+            </ul>
+        </nav>
+        <h1>WEBDESIGN</h1>
+    </header>
+
   <div class="container">
      <div class="main-content">
-        <h1>WEB DESIGN</h1>
         <div class="frame">
             <div class="description">
                  <p> My goal is to produce a cohesive experience while creating intuitive pathways that guide visitors through my diverse content. My target audience are creatives across all platforms. These are web designers, filmmakers, photographers ,writers etc. With this in mind I intend to create a navigation system that encourages these different users to explore my web and to not feel overwhelmed or confused by my different content types.</p>
@@ -58,19 +64,47 @@
                     <p>Combination of the stegris family or livemono family for fonts - My logo text will be around “40 to 48px”. 
                     Each page heading will be around “32 to 36px”. 
                     My about text will be around “18 to 20 px”. The menu bar diemensions will be around “68x44” (subject to change).
-                     Paragraph text will be around 18px. Headings on each page will be 36px to 48px. “Copyright text” will be around 14px to 16px. Situated at the bottom left corner of every page. </p>
-                     <div class="IMGS-container">
-                     <img class="IMGS"src="../BLOGS/IMG/livemono_family.jpeg"alt="image of a livemono family font">
-                     <img class="IMGS"src="../BLOGS/IMG/Stegris_family.jpeg"alt="image of a Stegris family font">
-                     <img class="IMGS"src="../BLOGS/IMG/main-colours.jpeg"alt="Image of colours that will be used on the website">
-                     <img class="IMGS"id="home-image"src="../BLOGS/IMG/Possibel_homepage.jpeg"alt="image of homepage witha gradient background containing the colour purple, pink , lime and orangish colour">
+                     Paragraph text will be around 18px. Headings on each page will be 36px to 48px. “Copyright text” will be around 14px to 16px. Situated at the bottom left corner of every page. 
+                </p>
+                     
+                  <div class="image-grid">
+                      <figure class="grid-item">
+                          <img src="../BLOGS/IMG/livemono_family.jpeg" alt="image of a livemono family font">
+                          <figcaption>livemono family font</figcaption>
+                      </figure>
+          
+                      <figure class="grid-item">
+                          <img src="../BLOGS/IMG/Stegris_family.jpeg" alt="image of a stegris family font">
+                          <figcaption>Stegria family font</figcaption>
+                      </figure>
+
+                      <figure class="grid-item">
+                        <img src="../BLOGS/IMG/main-colours.jpeg" alt="Image of colours that will be used on the website">
+                        <figcaption>Colours used on Website</figcaption>
+                    </figure>
+        
+                    <figure class="grid-item">
+                        <img src="../BLOGS/IMG/Possibel_homepage.jpeg" alt="image of homepage witha gradient background containing the colour purple, pink , lime and orangish colou">
+                        <figcaption>Homepage of my website</figcaption>
+                    </figure>
+
+                  </div>     
              </div>         
           </div>
        </div>  
    </div>   
       <footer>
-         <img class="logo" src="./IMAGES_WEBDESIGN/logo2-transparent_black.png"alt="logo_website_black">
-         <a class="about" href="../ABOUT/about.html">ABOUT</a>
+        <div class="footer-content">
+          <a href="../index.html">
+              <img class="logo" src="../WEB DESIGN/IMAGES_WEBDESIGN/logo2-transparent_black.png" alt="Website logo">
+          </a>
+          <a id="About" class="nav-title" href="../ABOUT/about.html">ABOUT</a>
+      </div>
+      
+      <div class="copyright">
+          <p>&copy; 2025 - All rights reserved</p>
+      </div>
       </footer>  
+      <script src="../WEB DESIGN/webdesign.js"></script>
 </body>
 </html>
