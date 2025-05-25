@@ -181,6 +181,32 @@ h1::after {
     font-size: 16px;
 }
 
+/* Citations */
+cite {
+    font-style: italic;
+}
+
+/* References section */
+.article-references {
+    background-color: rgba(225, 203, 165, 0.474);
+    padding: 20px 40px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.article-references h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.article-references ul {
+    padding-left: 20px;
+}
+
+.article-references ul li {
+    margin-bottom: 10px;
+}
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -301,7 +327,7 @@ figcaption {
     gap: 30px;
     width: 6rem;
     height:10rem;
-    margin-left: 100px;
+    margin-left: 100%;
 }
 
 #About {
