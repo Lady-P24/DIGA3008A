@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.grid-item img, .featured-image img');
     
     images.forEach(image => {
-        image.style.cursor = 'pointer';
         
         image.addEventListener('click', function() {
             
@@ -35,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
           
             lightboxImage.src = this.src;
             
-
             const figcaption = this.closest('figure').querySelector('figcaption');
             if (figcaption) {
                 lightboxCaption.textContent = figcaption.textContent;
@@ -43,9 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 lightboxCaption.style.display = 'none';
             }
-            
-        
-            document.body.style.overflow = 'hidden';
         });
     });
     
