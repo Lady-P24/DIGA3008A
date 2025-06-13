@@ -58,7 +58,9 @@ nav ul li a.current {
     color: white;
 }
 
-
+.h-card {
+    display:none ;
+}
 
 /* Blog List Styles */
 h1{
